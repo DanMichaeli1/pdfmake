@@ -134,7 +134,7 @@ class TextInlines {
 			let lineHeight = StyleContextStack.getStyleProperty(item, styleContextStack, 'lineHeight', 1);
 
 			item.width = this.widthOfText(item.text, item);
-			item.height = item.font.lineHeight(item.fontSize) * lineHeight;
+			item.height = item.fontSize * lineHeight;
 
 			if (!item.leadingCut) {
 				item.leadingCut = 0;
